@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --font-primary: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --primary-tomate: hsl(4, 100%, 67%);
+
+    --neutral-dark-slate-gray: hsl(234, 29%, 20%);
+    --neutral-charcoal-grey: hsl(235, 18%, 26%);
+    --neutral-grey: hsl(231, 7%, 60%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--neutral-dark-slate-gray);
+    color: var(--neutral-charcoal-grey);
+    font-family: var(--font-primary);
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 850px;
+    min-height: 400px;
+    background-color: var(--neutral-white);
+    display: flex;
+    border-radius: 14px;
+}
+
+.photo {
+    width: 350px;
+    background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    margin: 20px;
+}
+
+
+.content {
+    background-color: var(--neutral-white);
+    width: 380px;
+    border-radius: 15px;
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.content h {
+    font-size: 45px;
+    font-weight: var(--font-weight-bold);
+}
+
+.content p {
+    font-size: 15px;
+}
+
+.content ul {
+    font-size: 15px;
+    padding: 0px;
+}
+
+.content li {
+    background-image: url(../assets/images/icon-success.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left center;
+    padding: 10px 35px;
+    list-style: none;
+}
+
+.content label {
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+}
+
+.content input {
+    margin-top: 10px;
+    border: 2px solid var(--neutral-grey);
+    border-radius: 5px;
+    padding: 14px;
+    width: 90%;
+}
+
+.content button {
+    background-color: var(--neutral-dark-slate-gray);
+    color: var(--neutral-white);
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    padding: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
